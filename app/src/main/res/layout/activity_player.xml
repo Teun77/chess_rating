@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayerActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <ImageView
+                android:id="@+id/playerAvatarImageView"
+                android:layout_width="174dp"
+                android:layout_height="174dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/countryPlayerTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Country"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="@+id/playerAvatarImageView"
+                app:layout_constraintStart_toEndOf="@+id/playerAvatarImageView"
+                app:layout_constraintTop_toTopOf="@+id/playerAvatarImageView" />
+
+            <TextView
+                android:id="@+id/puzzleText"
+                style="@style/stat_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="64dp"
+                android:text="Puzzle"
+                app:layout_constraintStart_toStartOf="@+id/bulletText"
+                app:layout_constraintTop_toBottomOf="@+id/bulletText" />
+
+            <TextView
+                android:id="@+id/puzzleRatingTextView"
+                style="@style/stat_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="64dp"
+                android:text="Rating unnkown"
+                app:layout_constraintStart_toStartOf="@+id/bulletRatingTextView"
+                app:layout_constraintTop_toBottomOf="@+id/bulletRatingTextView" />
+
+            <TextView
+                android:id="@+id/rapidRatingTextView"
+                style="@style/stat_right"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:text="Rating unknown"
+                app:layout_constraintStart_toEndOf="@+id/rapidText"
+                app:layout_constraintTop_toBottomOf="@+id/playerAvatarImageView" />
+
+            <TextView
+                android:id="@+id/bulletText"
+                style="@style/stat_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="64dp"
+                android:text="Bullet"
+                app:layout_constraintStart_toStartOf="@+id/blitzText"
+                app:layout_constraintTop_toBottomOf="@+id/blitzText" />
+
+            <TextView
+                android:id="@+id/rapidText"
+                style="@style/stat_left"
+                android:layout_marginTop="32dp"
+                android:text="Rapid"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/playerAvatarImageView" />
+
+            <TextView
+                android:id="@+id/blitzText"
+                style="@style/stat_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="64dp"
+                android:text="Blitz"
+                app:layout_constraintStart_toStartOf="@+id/rapidText"
+                app:layout_constraintTop_toBottomOf="@+id/rapidText" />
+
+            <TextView
+                android:id="@+id/blitzRatingTextView"
+                style="@style/stat_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="64dp"
+                android:text="Rating unnkown"
+                app:layout_constraintStart_toStartOf="@+id/rapidRatingTextView"
+                app:layout_constraintTop_toBottomOf="@+id/rapidRatingTextView" />
+
+            <Button
+                android:id="@+id/addOrDeleteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="Delete"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/puzzleText" />
+
+            <TextView
+                android:id="@+id/bulletRatingTextView"
+                style="@style/stat_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="64dp"
+                android:text="Rating unnkown"
+                app:layout_constraintStart_toStartOf="@+id/blitzRatingTextView"
+                app:layout_constraintTop_toBottomOf="@+id/blitzRatingTextView" />
+
+            <Button
+                android:id="@+id/notesButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="Notes"
+                app:layout_constraintBottom_toBottomOf="@+id/playerAvatarImageView"
+                app:layout_constraintEnd_toStartOf="@+id/playerAvatarImageView"
+                app:layout_constraintTop_toTopOf="@+id/playerAvatarImageView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

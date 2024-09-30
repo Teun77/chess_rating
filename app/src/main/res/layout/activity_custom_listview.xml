@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".custom_listview">
+
+    <ImageView
+        android:id="@+id/avatarImageView"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameTextView"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/rapidTextView"
+        android:layout_width="32sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="1234"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/avatarImageView"
+        app:layout_constraintStart_toEndOf="@+id/avatarImageView"
+        app:layout_constraintTop_toTopOf="@+id/avatarImageView"
+        app:layout_constraintVertical_bias="0.524" />
+
+    <TextView
+        android:id="@+id/countryTextView"
+        android:layout_width="32sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:text="NL"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/avatarImageView"
+        app:layout_constraintStart_toEndOf="@+id/puzzleTextView"
+        app:layout_constraintTop_toTopOf="@+id/avatarImageView"
+        app:layout_constraintVertical_bias="0.524" />
+
+    <TextView
+        android:id="@+id/blitzTextView"
+        android:layout_width="32sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:text="1234"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/avatarImageView"
+        app:layout_constraintStart_toEndOf="@+id/rapidTextView"
+        app:layout_constraintTop_toTopOf="@+id/avatarImageView"
+        app:layout_constraintVertical_bias="0.524" />
+
+    <TextView
+        android:id="@+id/bulletTextView"
+        android:layout_width="32sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="2222"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/avatarImageView"
+        app:layout_constraintStart_toEndOf="@+id/blitzTextView"
+        app:layout_constraintTop_toTopOf="@+id/avatarImageView"
+        app:layout_constraintVertical_bias="0.524" />
+
+    <TextView
+        android:id="@+id/puzzleTextView"
+        android:layout_width="32sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="1234"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/bulletTextView"
+        app:layout_constraintTop_toTopOf="@+id/rapidTextView" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:text="Nameeeeeeeeee"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
